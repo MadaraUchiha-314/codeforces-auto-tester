@@ -5,6 +5,7 @@ import os
 def test_problem_for_testcase (problem_name,lang,test_case_no) :
 
 	test_file_name = "in"+test_case_no
+	output_file_name = "out"+test_case_no
 	base_path = problem_name+"/"
 
 	ac = False
@@ -21,7 +22,22 @@ def test_problem_for_testcase (problem_name,lang,test_case_no) :
 		if s != 0 :
 			print "--------- Runtime Error ---------"
 
-		ac = filecmp.cmp(base_path+"output/out"+test_case_no,"temp_output")
+		# ac = filecmp.cmp(base_path+"output/out"+test_case_no,"temp_output")
+
+		# Above Line to be used for strict comparision
+		# Below line to be used for non-strict comparision
+
+		with open (base_path+"output/out"+test_case_no,'r') as out_file :
+			with open ("temp_output",'r') as temp_output_file :
+
+				actual_output = out_file.read()
+				your_output = temp_output_file.read()
+
+				p = ''.join(actual_output.split())
+				q = ''.join(your_output.split())
+
+				if p == q :
+					ac = True
 
 		if ac :
 			print "AC for test case : " + test_case_no
@@ -34,12 +50,12 @@ def test_problem_for_testcase (problem_name,lang,test_case_no) :
 
 			print "--------- Your Output ---------"
 
-			with open (temp_output,'r') as your_output :
+			with open ("temp_output",'r') as your_output :
 				print your_output.read()
 
 			print "--------- Expected Output ---------"
 
-			with open (base_path+"output/"+test_file_name,'r') as out :
+			with open (base_path+"output/"+output_file_name,'r') as out :
 				print out.read()
 
 			if os.path.exists("temp_output") :
