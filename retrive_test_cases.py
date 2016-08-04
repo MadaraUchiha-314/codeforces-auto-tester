@@ -15,6 +15,11 @@ def retrive_test_cases (problem_url) :
 	if not os.path.exists(folder_base):
 		os.makedirs(folder_base)
 
+	if not os.path.exists(folder_base+problem_url[-1]) :
+		with open (folder_base+problem_url[-1]+".cpp",'w') as code :
+			with open ("template.cpp",'r') as template:
+				code.write (template.read())
+
 	html = response.read ()
 
 	soup = BeautifulSoup(html, 'html.parser')
@@ -47,3 +52,4 @@ def retrive_test_cases (problem_url) :
 				inp_file.write (data)
 
 		i += 1
+retrive_test_cases ("http://codeforces.com/contest/700/problem/B")
