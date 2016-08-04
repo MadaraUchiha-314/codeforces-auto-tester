@@ -58,11 +58,11 @@ def test_problem_for_testcase (problem_name,lang,test_case_no) :
 			with open (base_path+"output/"+output_file_name,'r') as out :
 				print out.read()
 
-			if os.path.exists("temp_output") :
+		if os.path.exists("temp_output") :
 				os.remove("temp_output")
 
-			if os.path.exists("a.out") :
-				os.remove("a.out")
+		if os.path.exists("a.out") :
+			os.remove("a.out")
 
 
 # test_problem_for_testcase ("B","cpp","0")
