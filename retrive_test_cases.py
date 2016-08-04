@@ -17,8 +17,13 @@ def retrive_test_cases (problem_url) :
 
 	if not os.path.exists(folder_base+problem_url[-1]) :
 		with open (folder_base+problem_url[-1]+".cpp",'w') as code :
-			with open ("template.cpp",'r') as template:
-				code.write (template.read())
+
+			if os.path.exists ("template.cpp") : 
+				with open ("template.cpp",'r') as template:
+					code.write (template.read())
+			else :
+				code.write ("")
+
 
 	html = response.read ()
 
