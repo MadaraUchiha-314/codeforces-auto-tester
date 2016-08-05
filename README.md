@@ -1,4 +1,4 @@
-# codeforces-auto-tester ![codeforces-image](http://st.codeforces.com/s/51866/images/codeforces-logo-with-telegram.png)
+# codeforces-auto-tester
 
 A simple tool to help you save time during a codeforces contest.
 
@@ -8,10 +8,10 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 
 **NOTE : You can add your own test cases into the folders and that will also be tested happily.**
 
-**Bonus : Keep your template code in the same folder as `main.py` and it will automatically populate your template for every problem.**
+**Bonus :** Keep your template code in the same folder as `main.py` and it will automatically populate your template for every problem.
 
 ## See it work
-- Download or Clone is repository
+- Download or Clone this repository
 - Identify a codeforeces contest number (Need not be a current contest) Ex. 703
 - To fetch testcases type : `python main.py fetch 703`
 - To test your code for a problem (say A)  : `python main.py test A`
