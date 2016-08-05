@@ -15,11 +15,13 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 - Identify a codeforeces contest number (Need not be a current contest) **Eg. 703 (Codeforces Round #365 (Div. 2))**
 - To fetch testcases type : `python main.py fetch 703`
 - To test your code for a problem (say A)  : `python main.py test A`
+- If multiple answers are possible : `python main.py test A multiple`
 
 ## Dependencies
 - [Beautiful Soup] (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ## TODO
 - [x] Create basic POC for C/C++ code
+- [x] Added support for multiple answers
 - [ ] Add support for Java and Python
 - [ ] Create a command line tool for Mac and Linux
