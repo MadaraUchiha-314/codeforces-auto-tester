@@ -12,7 +12,7 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 
 ## See it work
 - Download or Clone this repository
-- Identify a codeforeces contest number (Need not be a current contest) Ex. 703
+- Identify a codeforeces contest number (Need not be a current contest) **Eg. 703 (Codeforces Round #365 (Div. 2))**
 - To fetch testcases type : `python main.py fetch 703`
 - To test your code for a problem (say A)  : `python main.py test A`
 
