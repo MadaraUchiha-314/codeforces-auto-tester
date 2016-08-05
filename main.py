@@ -12,8 +12,13 @@ if __name__ == "__main__" :
 	else :
 		if len (arg) == 3 and arg[1] == "fetch" :
 			fetch_contest_testcases.fetch_contest_testcases (arg[2])
+
 		elif len (arg) == 3 and arg[1] == "test" :
 			test_problem.test_problem (arg[2])
+
+		elif len (arg) == 4 and arg[1] == "test" and arg[3] == "multiple" :
+			test_problem.test_problem(arg[2],"cpp","multiple-answers")
+			
 		else :
 			print "Could not parse"
 			sys.exit()

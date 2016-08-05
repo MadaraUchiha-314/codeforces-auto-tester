@@ -3,7 +3,7 @@ import filecmp
 import os
 import sys
 
-def test_problem_for_testcase (problem_name,lang,test_case_no) :
+def test_problem_for_testcase (problem_name,lang,test_case_no,typ="normal") :
 
 	test_file_name = "in"+test_case_no
 	output_file_name = "out"+test_case_no
@@ -46,6 +46,23 @@ def test_problem_for_testcase (problem_name,lang,test_case_no) :
 
 		if ac :
 			print "AC for test case : " + test_case_no
+			
+		elif typ == "multiple-answers" :
+			print "--------- Input ---------"
+
+			with open (base_path+"input/"+test_file_name,'r') as inp :
+				print inp.read()
+
+			print "--------- Your Output ---------"
+
+			with open ("temp_output",'r') as your_output :
+				print your_output.read()
+
+			print "--------- Sample Output ---------"
+
+			with open (base_path+"output/"+output_file_name,'r') as out :
+				print out.read()
+
 		else :
 			print "WA for test case : " + test_case_no
 			print "--------- Input ---------"
