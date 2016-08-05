@@ -19,7 +19,7 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 - If multiple answers are possible : **`cfat test A multiple`**
 
 ## Screenshot
-![Screenshot](http://imgur.com/a/qrqwg)
+![Screenshot](http://i.imgur.com/KuH4Cjx.png)
 
 ## Dependencies
 - [Beautiful Soup] (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
