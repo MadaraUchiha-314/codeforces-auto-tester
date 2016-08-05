@@ -1,4 +1,4 @@
-# codeforces-auto-tester
+# codeforces-auto-tester - cfat
 
 A simple tool to help you save time during a codeforces contest.
 
