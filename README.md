@@ -12,7 +12,7 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 
 ## See it work
 - Download or Clone this repository
-- Install Codeforces Auto Tester (cfat) by typing **`python setup.py install`** (Good to have [pip] (https://pip.pypa.io/en/stable/installing/) installed before)
+- Install Codeforces Auto Tester (cfat) by typing **`python setup.py install`** (Good to have [pip] (https://pip.pypa.io/en/stable/installing/) [installed] (http://www.saltycrane.com/blog/2010/02/how-install-pip-ubuntu/) before)
 - Identify a codeforeces contest number (Need not be a current contest) **Eg. 703 (Codeforces Round #365 (Div. 2))**
 - To fetch testcases type : **`cfat fetch 703`**
 - To test your code for a problem (say A)  : **`cfat test A`**
