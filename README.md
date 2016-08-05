@@ -1,4 +1,4 @@
-# codeforces-auto-tester
+# codeforces-auto-tester ![codeforces-image](http://st.codeforces.com/s/51866/images/codeforces-logo-with-telegram.png)
 
 A simple tool to help you save time during a codeforces contest.
 
