@@ -12,7 +12,7 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 - Download or Clone is repository
 - Identify a codeforeces contest number (Need not be a current contest) Ex. 703
 - To fetch testcases type : `python main.py fetch 703`
-- To test your code for a problem (say A)  : `python main.pyt test A`
+- To test your code for a problem (say A)  : `python main.py test A`
 
 ## Dependencies
 - [Beautiful Soup] (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
