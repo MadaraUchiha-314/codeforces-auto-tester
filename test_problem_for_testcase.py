@@ -1,6 +1,7 @@
 from subprocess import Popen,PIPE
 import filecmp
 import os
+import sys
 
 def test_problem_for_testcase (problem_name,lang,test_case_no) :
 
@@ -16,11 +17,15 @@ def test_problem_for_testcase (problem_name,lang,test_case_no) :
 
 		if r != 0 :
 			print "--------- Compilation Error ---------"
+			sys.exit()
+			
 
 		s = os.system ("./a.out <"+base_path+"input/"+test_file_name+" >temp_output")
 
 		if s != 0 :
 			print "--------- Runtime Error ---------"
+			sys.exit()
+			
 
 		# ac = filecmp.cmp(base_path+"output/out"+test_case_no,"temp_output")
 

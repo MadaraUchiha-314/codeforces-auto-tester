@@ -8,4 +8,4 @@ def test_problem (problem_name,lang="cpp"):
 	for i in xrange (number_of_tests):
 		test_problem_for_testcase.test_problem_for_testcase(problem_name,lang,str(i))
 
-# test_problem ("B","cpp")
+# test_problem ("A","cpp")
