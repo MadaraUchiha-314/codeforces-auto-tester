@@ -57,4 +57,3 @@ def retrive_test_cases (problem_url) :
 				inp_file.write (data)
 
 		i += 1
-# retrive_test_cases ("http://codeforces.com/contest/700/problem/B")

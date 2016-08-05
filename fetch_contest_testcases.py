@@ -3,7 +3,10 @@ import urllib
 import string
 import retrive_test_cases
 
-def fetch_contest_testcases (contest_url) :
+def fetch_contest_testcases (contest_number) :
+
+	contest_url = "http://codeforces.com/contest/"+contest_number
+
 	response = urllib.urlopen (contest_url)
 	html = response.read ()
 
@@ -22,5 +25,3 @@ def fetch_contest_testcases (contest_url) :
 
 	for i in xrange(number_of_problems) :
 		retrive_test_cases.retrive_test_cases(contest_url+"/problem/"+str(problem_names[i]))
-
-# fetch_contest_testcases ("http://codeforces.com/contest/703")

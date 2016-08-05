@@ -68,7 +68,3 @@ def test_problem_for_testcase (problem_name,lang,test_case_no) :
 
 		if os.path.exists("a.out") :
 			os.remove("a.out")
-
-
-# test_problem_for_testcase ("B","cpp","0")
-
