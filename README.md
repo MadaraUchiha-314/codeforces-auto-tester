@@ -18,6 +18,9 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 - To test your code for a problem (say A)  : **`cfat test A`**
 - If multiple answers are possible : **`cfat test A multiple`**
 
+## Screenshot
+![Screenshot](http://imgur.com/a/qrqwg)
+
 ## Dependencies
 - [Beautiful Soup] (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
