@@ -32,53 +32,58 @@ def test_problem_for_testcase (problem_name,lang,test_case_no,typ="normal") :
 		# Above Line to be used for strict comparision
 		# Below line to be used for non-strict comparision
 
-		with open (base_path+"output/out"+test_case_no,'r') as out_file :
-			with open ("temp_output",'r') as temp_output_file :
+		try :
 
-				actual_output = out_file.read()
-				your_output = temp_output_file.read()
+			with open (base_path+"output/out"+test_case_no,'r') as out_file :
+				with open ("temp_output",'r') as temp_output_file :
 
-				p = ''.join(actual_output.split())
-				q = ''.join(your_output.split())
+					actual_output = out_file.read()
+					your_output = temp_output_file.read()
 
-				if p == q :
-					ac = True
+					p = ''.join(actual_output.split())
+					q = ''.join(your_output.split())
 
-		if ac :
-			print "AC for test case : " + test_case_no
-			
-		elif typ == "multiple-answers" :
-			print "--------- Input ---------"
+					if p == q :
+						ac = True
 
-			with open (base_path+"input/"+test_file_name,'r') as inp :
-				print inp.read()
+			if ac :
+				print "AC for test case : " + test_case_no
+				
+			elif typ == "multiple-answers" :
+				print "--------- Input ---------"
 
-			print "--------- Your Output ---------"
+				with open (base_path+"input/"+test_file_name,'r') as inp :
+					print inp.read()
 
-			with open ("temp_output",'r') as your_output :
-				print your_output.read()
+				print "--------- Your Output ---------"
 
-			print "--------- Sample Output ---------"
+				with open ("temp_output",'r') as your_output :
+					print your_output.read()
 
-			with open (base_path+"output/"+output_file_name,'r') as out :
-				print out.read()
+				print "--------- Sample Output ---------"
 
-		else :
-			print "WA for test case : " + test_case_no
-			print "--------- Input ---------"
+				with open (base_path+"output/"+output_file_name,'r') as out :
+					print out.read()
 
-			with open (base_path+"input/"+test_file_name,'r') as inp :
-				print inp.read()
+			else :
+				print "WA for test case : " + test_case_no
+				print "--------- Input ---------"
 
-			print "--------- Your Output ---------"
+				with open (base_path+"input/"+test_file_name,'r') as inp :
+					print inp.read()
 
-			with open ("temp_output",'r') as your_output :
-				print your_output.read()
+				print "--------- Your Output ---------"
 
-			print "--------- Expected Output ---------"
+				with open ("temp_output",'r') as your_output :
+					print your_output.read()
 
-			with open (base_path+"output/"+output_file_name,'r') as out :
-				print out.read()
+				print "--------- Expected Output ---------"
+
+				with open (base_path+"output/"+output_file_name,'r') as out :
+					print out.read()
+					
+		except IOError :
+			pass
 
 		if os.path.exists("temp_output") :
 				os.remove("temp_output")
