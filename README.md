@@ -12,10 +12,11 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 
 ## See it work
 - Download or Clone this repository
+- Install Codeforces Auto Tester (cfat) by typing `python setup.py install` (Good to have [pip] (https://pip.pypa.io/en/stable/installing/) install before)
 - Identify a codeforeces contest number (Need not be a current contest) **Eg. 703 (Codeforces Round #365 (Div. 2))**
-- To fetch testcases type : `python main.py fetch 703`
-- To test your code for a problem (say A)  : `python main.py test A`
-- If multiple answers are possible : `python main.py test A multiple`
+- To fetch testcases type : `cfat fetch 703`
+- To test your code for a problem (say A)  : `cfat test A`
+- If multiple answers are possible : `cfat test A multiple`
 
 ## Dependencies
 - [Beautiful Soup] (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
@@ -23,5 +24,6 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 ## TODO
 - [x] Create basic POC for C/C++ code
 - [x] Added support for multiple answers
+- [x] Create a command line tool for Mac and Linux
 - [ ] Add support for Java and Python
-- [ ] Create a command line tool for Mac and Linux
+- [ ] Add support for approximate answers (Eg. floating point)
