@@ -14,7 +14,7 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 - Download or Clone this repository
 - Install Codeforces Auto Tester (cfat) by typing `python setup.py install` (Good to have [pip] (https://pip.pypa.io/en/stable/installing/) installed before)
 - Identify a codeforeces contest number (Need not be a current contest) **Eg. 703 (Codeforces Round #365 (Div. 2))**
-- To fetch testcases type : `cfat fetch 703`
+- To fetch testcases type : **`cfat fetch 703`**
 - To test your code for a problem (say A)  : `cfat test A`
 - If multiple answers are possible : `cfat test A multiple`
 
