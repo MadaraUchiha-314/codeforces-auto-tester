@@ -8,7 +8,7 @@ Ask it to test and it will run the program on the sample inputs and check whethe
 
 **NOTE : You can add your own test cases into the folders and that will also be tested happily.**
 
-**Bonus :** Keep your template code as `template.cpp` in the same folder as `main.py` and it will automatically populate your template for every problem.
+**Bonus :** Keep your template code as `template.cpp` in the same place as your CWD and it will automatically populate your template for every problem.
 
 ## See it work
 - Download or Clone this repository
